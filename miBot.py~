@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler
 
 #declarando token variables y funciones
-TOKEN = 'Tu token' # encriptar o algo.xd
+TOKEN = '1371923837:AAGlcLZKE7rxO5z8HTQ2mGAdEI97dkk6k6c' # encriptar o algo.xd
 
 def start(update, context):
        update.message.reply_text('Hola, mortal')
@@ -9,7 +9,7 @@ def start(update, context):
        
 def getBotInfo(update, context):
       name = update.message.from_user.username
-      update.message.reply_text(f"Soy un bot creado por TU NOMBRE  \n administro y filtro  informacion de clientes provedores \n Gracias por invocarme, {name} ")
+      update.message.reply_text('Soy un bot creado por Debugger Girl  \n administro y filtro  informacion de clientes provedores \n Gracias por invocarme, {name} ')
 if __name__=='__main__': 
        updater=Updater(token=TOKEN, use_context=True)
        #creando el dispatcher
@@ -20,4 +20,4 @@ if __name__=='__main__':
        
        updater.start_polling() # seguir escuchando por mensajes entrantes
        updater.idle()
- 
+
